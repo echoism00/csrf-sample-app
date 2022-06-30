@@ -24,9 +24,23 @@
     ]
   },
   "angularCompilerOptions": {
-    "enableI18nLegacyMessageIdFormat": false,
+    "enableI18nLegacyMessageIdFormat": false, 
+    "strictTemplates": true,
+    "preserveWhitespaces": false,
+    "strictMetadataEmit": false,
+    "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true,
+    "strictInputTypes": false,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictOutputEventTypes": true,
+    "strictDomEventTypes": true,
+    "strictContextGenerics": true,
+    "strictDomLocalRefTypes": true,
+    "strictLiteralTypes": true,
+    "strictSafeNavigationTypes": true,
+    "strictAttributeTypes": true,
+    "strictNullInputTypes": true,
+    "strictPropertyInitialization":false
   }
+
 }

@@ -12,7 +12,7 @@ export class HomeService {
 
   getCities() {
     return lastValueFrom(
-      this.http.get('http://localhost:3000/cities', { withCredentials: true })
+      this.http.get('http://localhost:8000/api/user', { withCredentials: true })
     );
   }
   transfer(params: { name: string; amount: number }) {
@@ -25,5 +25,11 @@ export class HomeService {
         }
       )
     );
+  }
+
+  logout() {
+    return lastValueFrom(this.http.post('http://localhost:8000/api/logout',{}, {
+      withCredentials: true,
+    }));
   }
 }
